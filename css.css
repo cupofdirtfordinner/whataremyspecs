@@ -1,0 +1,39 @@
+:root {
+    --blue1: #172bc3;
+    --blue2: #1e5adf;
+    --blue3: #378cef;
+
+    --blueg1: var(--blue1);
+    --blueg2: linear-gradient(80deg, var(--blue1) 0%, var(--blue2) 70%, var(--blue3) 100%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Dongle:wght@300&family=M+PLUS+Rounded+1c:wght@500&family=Poller+One&family=Rubik+Mono+One&display=swap');
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Bowlby One', sans-serif;
+}
+
+#mainpage {
+    width: 65%;
+    height: calc(100vh - .5em);
+    text-align: center;
+    top: 0;
+    left: 35%;
+    position: absolute;
+    background: var(--blueg1);
+    background: var(--blueg2);
+    padding-top: .5em;
+}
+.spec {
+    width: 49%;
+    height:15vh;
+    background: var(--blueg1);
+    background: var(--blueg2);
+    display: inline-block;
+    overflow: auto;
+    text-align: left;
+    border-radius: 1em;
+    padding: .75em;
+    box-sizing: border-box;
+    //border-style: solid;
+}
