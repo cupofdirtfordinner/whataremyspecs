@@ -4,7 +4,7 @@
     --blue3: #378cef;
 
     --blueg1: var(--blue1);
-    --blueg2: linear-gradient(80deg, var(--blue1) 0%, var(--blue2) 70%, var(--blue3) 100%);
+    --blueg2: linear-gradient(45deg, var(--blue1) 0%, var(--blue2) 70%, var(--blue3) 100%);
 }
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Dongle:wght@300&family=M+PLUS+Rounded+1c:wght@500&family=Poller+One&family=Rubik+Mono+One&display=swap');
 body {
@@ -24,9 +24,14 @@ body {
     background: var(--blueg2);
     padding-top: .5em;
 }
+
+#sperg {
+    width: 98.5%;
+}
+
 .spec {
     width: 49%;
-    height:15vh;
+    min-height:15vh;
     background: var(--blueg1);
     background: var(--blueg2);
     display: inline-block;
@@ -35,5 +40,79 @@ body {
     border-radius: 1em;
     padding: .75em;
     box-sizing: border-box;
-    //border-style: solid;
+    filter: drop-shadow(-5px 5px 0px black);
+    outline-style: inset;
+    outline-width: 5px;
+    outline-color: rgba(255, 255, 255, 0);
+    //outline-offset: 1vw;
+}
+
+.title {
+    font-size:1.15em;
+    display: inline-block;
+    transform: scaleX(1.2);
+    filter: drop-shadow(-1px 1px 0px black)drop-shadow(-1px 1px 0px black)drop-shadow(-1px 1px 0px black)drop-shadow(-1px 1px 0px black)drop-shadow(-1px 1px 0px black);
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 1.5%;
+}
+
+.property {
+    color: rgba(255, 255, 255, 0.6);
+    font-size:0.8em;
+    font-style: italic;
+}
+
+#extension {
+    width: 35%;
+    left: 0;
+    height: calc(100vh - .5em);
+    text-align: center;
+    top: 0;
+    position: absolute;
+    background: var(--blueg1);
+    background: var(--blueg2);
+    padding-top: .5em;
+    color: white;
+    text-align: left;
+}
+#extension * {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+#container {
+    height: min-content;
+}
+
+#ad {
+    width: 728px;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+    font-weight: lighter;
+    margin: auto;
+    top: 100%;
+    position: absolute; 
+    left: calc(50% - (728px /2));
+    top: calc(100% - (90px + 1.5em));
+    border-style: dashed;
+}
+
+#graphic {
+    height: 50%;
+    width: auto;
+    aspect-ratio: 1 / 1;
+    margin-left: 0.8em;
+    margin-top: 8vh;
+    margin-bottom: 6vh;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Google_Chrome_icon_%28March_2011%29.svg/1024px-Google_Chrome_icon_%28March_2011%29.svg.png');
+    background-size: contain;
+    display: inline-block;
+    position: absolute;
+}
+
+#extensionquestionmark {
+    display: inline-block;
+    width: 60%;
+    font-size: 0.7em;
 }

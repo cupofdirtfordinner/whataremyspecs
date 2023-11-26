@@ -4,34 +4,44 @@
         <link rel="stylesheet" href="css.css">
     </head>
     <body>
+        <div id="extension">
+            <div id="container">
+                <div id="graphic"></div>
+                <span id="extensionquestionmark">hey if you dont have the <a href="extension.com">extension</a> then I cant tell what all hardware is in your computer. just install it, reload the page, then uninstall it. <br><br> if you dont trust me, it's also open source <span style="color: rgba(255, 255, 255, 0.5); font-size: .75em; font-style: italic;">(which means you can look at all the code!)</span> and the github link is <a href="github.com">here. </a></span>
+            </div>
+        </div>
+
+        
         <div id="mainpage">
             <div id="specs">
                 <div id="cpu" class="spec">
-                    cpu <br>
-                    <span id="cpuSpan" class="property"></span>
+                    <span class='title'>CPU</span> <br>
+                    <span class="property">name: </span><span id="cpuSpan"></span>
                 </div>
                 <div id="gpu" class="spec">
-                    gpu <br>
-                    name: <span id="gpuSpan" class="property"></span>
+                    <span class='title'>GPU</span> <br>
+                    <span class="property">name: </span><span id="gpuSpan" ></span>
+                    
+
+
                 </div>
                 <div id="memory" class="spec">
-                    memory <br>
-                    size: <span id="ramSpan" class="property"></span>
-                    type: <span id="ramSpan" class="property"></span>
+                    <span class='title'>memory</span> <br>
+                    <span class="property">size: </span><span id="ramSpan" ></span> <br>
+                    <span class="property">type:</span> <span id="ramTypeSpan"></span>
                 </div>
                 <div id="storage" class="spec">
-                    storage <br>
-                    ammount: <span id="storageSpan" class="property"></span>
-                    type: <span id="storageSpan" class="property"></span>
-                </div>
-                <div id="os" class="spec">
-                    herm<br>
+                    <span class='title'>Storage</span> <br>
+                    <span class="property">ammount: </span><span id="storageSpan" ></span> <br>
+                    <span class="property">type: </span><span id="storageTypeSpan" ></span>
                 </div>
                 <div id="sperg" class="spec">
-                    wifi:<span id="connectSpan"></span> <br>
-                    battery:<span id="batterySpan"></span> <br>
-                    operating system: <span id="osSpan"></span>
+                    <span class='title'>Etc.</span> <br>
+                    <span class="property">wifi: </span><span id="connectSpan"></span> <br>
+                    <span class="property">battery: </span><span id="batterySpan"></span> <br>
+                    <span class="property">operating system: </span><span id="osSpan"></span>
                 </div>
+                <div id="ad">wouldn't it be funny if "adblock" was called "adcock"</div>
             </div>
         </div>
         <script src="getspecs.js"></script>
